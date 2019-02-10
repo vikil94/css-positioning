@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
+
+
 html {
   box-sizing: inherit;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100%; /* this will be 16px on most browsers */
-  line-height: 1.5; /* this is a multiple of the font size (1.5 * 16px = 24px) */
+  font-size: 100%;
+  line-height: 1.5;
 }
 
 body {
@@ -21,9 +23,51 @@ img {
 
 figure {
   margin: 0;
+  position: absolute;
 }
 
 .film {
-  width: 50%;
+  width: 80%;
+  height: 400px;
   margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  border: solid black;
+}
+
+.film-details {
+  display: block;
+  width: 60%;
+  right: 600px;
+  margin-right: 200px;
+  float: right;
+}
+
+.film-poster {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  height: 300px;
+  width: 200px;
+
+}
+
+
+
+.action-watch-later {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+}
+
+.fa {
+  color: red;
+}
+
+.action-like {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
 }
